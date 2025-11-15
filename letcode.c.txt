@@ -1,0 +1,31 @@
+int findMin(int* nums, int numsSize) {
+    int left = 0;
+    int right = numsSize - 1;
+
+    if (nums[left] < nums[right]) {
+        return nums[left];
+    }
+       
+    while (left < right) {
+        
+        if (nums[left] > nums[right]) {
+            left = num[right] + 1;
+        }
+        else {
+            right = num ;
+        }
+    }
+    return nums[left];
+           
+    }
+
+
+int main() {
+  
+    int nums3[] = {11, 13, 15, 17};
+
+   
+    printf("Minimum in nums3: %d\n", findMin(nums3, 4));
+
+    return 0;
+}
